@@ -10,12 +10,13 @@ Este proyecto despliega una infraestructura de dos niveles para una aplicación 
 La aplicación se accede mediante port forwarding desde el host al servidor web.
 
 ## Estructura del Proyecto
+```
 ├── README.md
 ├── Vagrantfile // Archivo de configuracion de las maquinas con el script de despliegue integrado
 └── screenshots/
     ├── screencast.mp4    //Video del funcionamiento de la web
     └── app_functioning.png // Captura de funcionamiento de la web
-
+``
 ## Configuración Vagrantfile
 
 - Dos máquinas declaradas con `config.vm.define` llamadas `web` y `db`.
