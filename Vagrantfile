@@ -13,7 +13,7 @@ Vagrant.configure("2") do |config|
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://vagrantcloud.com/search.
     # ===============================================
-    # 💻 Máquina Web (Apache + PHP)
+    #  Máquina Web (Apache + PHP)
     # ===============================================
     config.vm.define :web do |web|
       web.vm.box = "bento/debian-13"
@@ -38,10 +38,6 @@ Vagrant.configure("2") do |config|
       echo "Configurando Apache con SED..."
       # 1. Copia el archivo base
       sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/usuariosapp.conf
-      # ===============================================
-      # NO MODIFICA EL ARCHIVO
-      # ===============================================
-
 
       sudo sed -i 's/DocumentRoot .*/DocumentRoot \\\/var\\\/www\\\/html\\\/iaw-practica-lamp\\\/src/' /etc/apache2/sites-available/usuariosapp.conf
       echo "Habilitando mod_rewrite y el sitio..."
@@ -58,7 +54,7 @@ Vagrant.configure("2") do |config|
       SHELL
 end
         # ===============================================
-        # 💾 Máquina Base de Datos (MariaDB)
+        # Máquina Base de Datos (MariaDB)
         # ===============================================
     config.vm.define :db do |db|
       db.vm.box = "bento/debian-13"
