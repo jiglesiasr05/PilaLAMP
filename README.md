@@ -16,7 +16,7 @@ La aplicación se accede mediante port forwarding desde el host al servidor web.
 └── screenshots/
     ├── screencast.mp4    //Video del funcionamiento de la web
     └── app_functioning.png // Captura de funcionamiento de la web
-``
+```
 ## Configuración Vagrantfile
 
 - Dos máquinas declaradas con `config.vm.define` llamadas `web` y `db`.
