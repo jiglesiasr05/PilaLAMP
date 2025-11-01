@@ -52,11 +52,12 @@ sed -i "s|'localhost'|'192.168.56.101'|g; s|'database_name_here'|'iawdb'|g; s|'u
 apt-get update
 apt-get upgrade -y
 apt-get install -y mariadb-server git
-
-git clone https://github.com/josejuansanchez/iaw-practica-lamp.git
-sed -i "s|bind-address\s*=.*|bind-address = 0.0.0.0|g" /etc/mysql/mariadb.conf.d/50-server.cnf
+echo "Clonando repositorio"
+git clone https://github.com/josejuansanchez/iaw-practica-lamp.git 
+sed -i "s|bind-address\s*=.*|bind-address = 0.0.0.0|g" /etc/mysql/mariadb.conf.d/50-server.cnf #permitir accesso desde la misma red
+echo "Reiniciando Mariadb"
 systemctl restart mariadb
-
+echo "Creando la base de datos"
 mysql -u root -e "
 CREATE DATABASE IF NOT EXISTS iawdb;
 CREATE USER IF NOT EXISTS 'iawuser'@'192.168.56.%' IDENTIFIED BY 'iawpass';
