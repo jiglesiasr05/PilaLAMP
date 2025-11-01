@@ -48,7 +48,7 @@ systemctl restart apache2
 sed -i "s|'localhost'|'192.168.56.101'|g; s|'database_name_here'|'iawdb'|g; s|'username_here'|'iawuser'|g; s|'password_here'|'iawpass'|g" /var/www/html/iaw-practica-lamp/src/config.php
 ```
 ### Servidor Base de Datos (MariaDB)
-``
+```
 apt-get update
 apt-get upgrade -y
 apt-get install -y mariadb-server git
