@@ -84,7 +84,7 @@ También se incluirá un screencast mostrando la navegación y funcionamiento de
 ## URL del Repositorio
 
 El código completo, scripts y documentación están disponibles en:  
-`https://github.com/jiglesiasr05/PilaLAMP/`
+`https://github.com/jiglesiasr05/PilaLAMP/Vagrantfile`
 
 ---
 
