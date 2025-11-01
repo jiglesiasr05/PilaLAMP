@@ -31,6 +31,7 @@ La aplicación se accede mediante port forwarding desde el host al servidor web.
 ## Scripts de Provisionamiento
 
 ### Servidor Web (Apache + PHP)
+```
 apt-get update
 apt-get install -y apache2 php libapache2-mod-php php-mysql git
 
@@ -45,8 +46,9 @@ a2dissite 000-default.conf
 systemctl restart apache2
 
 sed -i "s|'localhost'|'192.168.56.101'|g; s|'database_name_here'|'iawdb'|g; s|'username_here'|'iawuser'|g; s|'password_here'|'iawpass'|g" /var/www/html/iaw-practica-lamp/src/config.php
-
+```
 ### Servidor Base de Datos (MariaDB)
+``
 apt-get update
 apt-get upgrade -y
 apt-get install -y mariadb-server git
@@ -62,7 +64,7 @@ GRANT SELECT, INSERT, DELETE, UPDATE ON iawdb.* TO 'iawuser'@'192.168.56.%';
 FLUSH PRIVILEGES;
 "
 mysql -u root iawdb < iaw-practica-lamp/db/database.sql
-
+```
 ## Uso
 
 - Ejecutar `vagrant up` para levantar las dos máquinas.
