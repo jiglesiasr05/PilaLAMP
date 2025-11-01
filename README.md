@@ -82,7 +82,7 @@ Se incluye la carpeta `screenshots` con imágenes que muestran:
 
 También se incluirá un screencast mostrando la navegación y funcionamiento de la aplicación desplegada.
 
-[Mi Imagen](screenshots/Captura\de\pantalla_PILALAMP.png).
+[Mi Imagen](screenshots/Capturadepantalla_PilaLAMP.png).
 
 ## URL del Repositorio
 
