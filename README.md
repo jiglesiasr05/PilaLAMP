@@ -81,7 +81,6 @@ Se incluye la carpeta `screenshots` con imágenes que muestran:
 - Servidor MariaDB activo con base creada.
 - Aplicación web funcionando correctamente.
 
-También se incluirá un screencast mostrando la navegación y funcionamiento de la aplicación desplegada.
 
 ![Captura_De Pantalla](screenshots/Capturadepantalla_PilaLAMP.png).
 
