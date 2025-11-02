@@ -41,7 +41,6 @@ Vagrant.configure("2") do |config|
 
       sudo sed -i 's/DocumentRoot .*/DocumentRoot \\\/var\\\/www\\\/html\\\/iaw-practica-lamp\\\/src/' /etc/apache2/sites-available/usuariosapp.conf
       echo "Habilitando mod_rewrite y el sitio..."
-      a2enmod rewrite
       a2ensite usuariosapp.conf
       a2dissite 000-default.conf
 
