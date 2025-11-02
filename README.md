@@ -71,6 +71,7 @@ mysql -u root iawdb < iaw-practica-lamp/db/database.sql
 - Ejecutar `vagrant up` para levantar las dos máquinas.
 - Acceder a la aplicación en el navegador con `http://localhost:8080`.
 - Validar que ambos servidores estén activos con `vagrant status` y que la aplicación funcione correctamente.
+- Para acceder a la maquina DB debemos realizar una conexion ssh desde WEB `vagrant@192.168.56.101`
 
 ## Evidencias
 
