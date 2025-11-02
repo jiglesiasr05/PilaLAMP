@@ -49,7 +49,6 @@ Vagrant.configure("2") do |config|
       sudo systemctl restart apache2
 
       echo "Configurando config.php..."
-      # Comando SED FINAL Y ROBUSTO: Modifica las CONSTANTES PHP en una sola pasada.
       sudo sed -i "s|'localhost'|'192.168.56.101'|g; s|'database_name_here'|'iawdb'|g; s|'username_here'|'iawuser'|g; s|'password_here'|'iawpass'|g" /var/www/html/iaw-practica-lamp/src/config.php
       SHELL
 end
