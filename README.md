@@ -84,13 +84,3 @@ Se incluye la carpeta `screenshots` con imágenes que muestran:
 
 ![Captura_De Pantalla](screenshots/Capturadepantalla_PilaLAMP.png).
 
-## URL del Repositorio
-
-El código completo, scripts y documentación están disponibles en:  
-`https://github.com/jiglesiasr05/PilaLAMP/Vagrantfile`
-
----
-
-Este documento explica detalladamente tanto la infraestructura como el aprovisionamiento y configuración para cumplir con los objetivos de la práctica.
-
-
